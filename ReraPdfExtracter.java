@@ -1052,6 +1052,7 @@ class ReraPdfExtracter {
 				// System.out.println(arrOfStr1[0]);
 
 				regNolist.add(arrOfStr1[0]);
+			   
 			}
 		}
 		// System.out.println(regNolist);
