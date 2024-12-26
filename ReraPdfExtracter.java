@@ -142,8 +142,8 @@ class ReraPdfExtracter {
 			// TODO: Need to remove hardcode "BENGALURU URBAN" and replace with code 05,
 			// Mentin all allowed district names in a config file
 			// Aslo benaglore rural
-			if (projStatus.contains("APPROVED") && districtName.contains("BENGALURU URBAN") && pdfStatus.length() < 1) {
-
+			if (projStatus.contains("APPROVED") && districtName.contains("BENGALURU URBAN") && pdfStatus.length() < 1) 
+			{
 				System.out.println("Good to go.." + projStatus + ":" + "HasPDF" + ":" + districtName + ":");
 				CommonUtils.createFolderSubfolder(propFolderPath);
 				/***
