@@ -1060,7 +1060,6 @@ class ReraPdfExtracter {
 		s.close();
 
 		return regNolist;
-
 	}
 
 //	public static String getTalukCode(String option) {
@@ -1092,7 +1091,7 @@ class ReraPdfExtracter {
 //	            return "Error Invalid District code : " + option;
 //	    }
 //	}
-
+	
 	static String SetDownloadPath() {
 		// Get the current working directory
 		String currentDir = System.getProperty("user.dir");
