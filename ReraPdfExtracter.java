@@ -1,5 +1,4 @@
 package proppy.tool.rera;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -143,8 +142,8 @@ class ReraPdfExtracter {
 			// TODO: Need to remove hardcode "BENGALURU URBAN" and replace with code 05,
 			// Mentin all allowed district names in a config file
 			// Aslo benaglore rural
-			if (projStatus.contains("APPROVED") && districtName.contains("BENGALURU URBAN") && pdfStatus.length() < 1) {
-
+			if (projStatus.contains("APPROVED") && districtName.contains("BENGALURU URBAN") && pdfStatus.length() < 1) 
+			{
 				System.out.println("Good to go.." + projStatus + ":" + "HasPDF" + ":" + districtName + ":");
 				CommonUtils.createFolderSubfolder(propFolderPath);
 				/***
@@ -1053,6 +1052,7 @@ class ReraPdfExtracter {
 				// System.out.println(arrOfStr1[0]);
 
 				regNolist.add(arrOfStr1[0]);
+			   
 			}
 		}
 		// System.out.println(regNolist);
@@ -1060,7 +1060,6 @@ class ReraPdfExtracter {
 		s.close();
 
 		return regNolist;
-
 	}
 
 //	public static String getTalukCode(String option) {
@@ -1092,7 +1091,7 @@ class ReraPdfExtracter {
 //	            return "Error Invalid District code : " + option;
 //	    }
 //	}
-
+	
 	static String SetDownloadPath() {
 		// Get the current working directory
 		String currentDir = System.getProperty("user.dir");
