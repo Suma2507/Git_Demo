@@ -81,7 +81,6 @@ public class FolderCheckerPdf {
 			System.err.println("An error occurred while reading the file: " + e.getMessage());
 		}
 	}
-
 	public static boolean isFolderNotEmpty(File folder) {
 		File[] files = folder.listFiles();
 
@@ -89,7 +88,6 @@ public class FolderCheckerPdf {
 			// The folder itself is empty
 			return false;
 		}
-
 		for (File file : files) {
 			if (file.isFile()) {
 				// Found a file
