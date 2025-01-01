@@ -271,7 +271,7 @@ class ReraPdfExtracter {
 							complaintWriter.newLine(); // Move to the next line after writing the row
 						}
 					}
-
+					
 					complaintWriter.close();
 					System.out.println("Project complaints written to " + complaintTxt);
 
@@ -286,6 +286,7 @@ class ReraPdfExtracter {
 				}
 
 				// Close the complaints section
+				
 				driver.findElement(By.cssSelector("button[onclick='reload()']")).click();
 				waiting(1000);
 
