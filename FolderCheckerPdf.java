@@ -92,7 +92,8 @@ public class FolderCheckerPdf {
 			if (file.isFile()) {
 				// Found a file
 				return true;
-			} else if (file.isDirectory()) {
+			} 
+				else if (file.isDirectory()) {
 				// Recursively check subfolders
 				if (isFolderNotEmpty(file)) {
 					return true;
