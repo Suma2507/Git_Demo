@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import proppy.tool.utils.CommonUtils;
 
 public class FolderCheckerPdf {
